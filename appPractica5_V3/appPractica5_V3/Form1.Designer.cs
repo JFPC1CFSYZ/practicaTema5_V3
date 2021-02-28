@@ -32,10 +32,11 @@ namespace appPractica5_V3
             this.aluNombre = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.aluNota = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.listaAlumnos = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.aluNota = new System.Windows.Forms.NumericUpDown();
+            ((System.ComponentModel.ISupportInitialize)(this.aluNota)).BeginInit();
             this.SuspendLayout();
             // 
             // aluNombre
@@ -62,13 +63,6 @@ namespace appPractica5_V3
             this.label2.Size = new System.Drawing.Size(84, 13);
             this.label2.TabIndex = 3;
             this.label2.Text = "Nota del alumno";
-            // 
-            // aluNota
-            // 
-            this.aluNota.Location = new System.Drawing.Point(311, 48);
-            this.aluNota.Name = "aluNota";
-            this.aluNota.Size = new System.Drawing.Size(95, 20);
-            this.aluNota.TabIndex = 2;
             // 
             // label3
             // 
@@ -98,20 +92,28 @@ namespace appPractica5_V3
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // aluNota
+            // 
+            this.aluNota.Location = new System.Drawing.Point(311, 49);
+            this.aluNota.Name = "aluNota";
+            this.aluNota.Size = new System.Drawing.Size(81, 20);
+            this.aluNota.TabIndex = 7;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.aluNota);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.listaAlumnos);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.aluNota);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.aluNombre);
             this.Name = "Form1";
             this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.aluNota)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -122,10 +124,10 @@ namespace appPractica5_V3
         private System.Windows.Forms.TextBox aluNombre;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox aluNota;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox listaAlumnos;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.NumericUpDown aluNota;
     }
 }
 
